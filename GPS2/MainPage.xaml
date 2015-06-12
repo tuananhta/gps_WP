@@ -1,0 +1,19 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GPS2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Maps="using:Windows.UI.Xaml.Controls.Maps"
+    x:Class="GPS2.MainPage"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel>
+            <TextBlock Text="Location app" FontSize="48"/>
+            <Button Content="Get GPS location" Click="Btn_map" Width="400"/>
+            <Button Content="Get Weather info" Click="Btn_weather" Width="400"/>
+        </StackPanel>
+    </Grid>
+</Page>

@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="GPS2.ShowMap"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GPS2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:Maps="using:Windows.UI.Xaml.Controls.Maps"    
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel>
+            <TextBlock Text="Location app" FontSize="48"/>
+            <Grid>
+                <Button Content="Home" Click="Return_Home"></Button>
+                <Button Content="Update Location" Click="Update_Location" Margin="240,-1,0,1"></Button>
+                <Button Content="Weather" Click="Show_Weather" Margin="121,0,0,0"></Button>
+            </Grid>
+            <TextBlock x:Name="geolocation" Text="Your location." FontSize="28"/>
+            <Maps:MapControl
+            x:Name="MapControl1"
+            MapServiceToken=""
+            Height="560"
+            Margin="0,0,0,0" />
+        </StackPanel>
+    </Grid>
+</Page>
